@@ -1,0 +1,103 @@
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: #FEFEFE;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	padding: 30px 20px;
+	row-gap: 15px;
+	position: relative;
+}
+.card__img {
+	text-align: center;
+	flex: 0 1 100%;
+	width: 100%;
+	max-height: 100%;
+}
+.card__title,.card__price {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 34px;
+	color: #141414;
+}
+.card__title{
+	flex: 0 1 100%;
+}
+.cart__size,
+.cart__consists,
+.cart__reviews {
+	font-weight: 600;
+	font-size: 16px;
+	color: #ABABAB;
+	flex: 0 1 40%;
+}
+.cart__consists,
+.cart__reviews {
+	text-align: right;
+	flex: 0 1 60%;
+}
+.cart__stars {
+	flex: 0 1 40%;
+
+}
+
+.cart__reviews {
+	font-weight: 500;
+}
+.cart__price {
+}
+.cart__heart,
+.cart__balance{
+	padding: 0 10px;
+	font-size: 26px;
+}
+.cart__icons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cart__heart{
+	color:#E8AA31;
+	transition: 0.5s; 
+	position: relative;
+}
+.cart__heart .hover-icon{
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	opacity: 0;
+	transition: 0.4s;
+}
+.cart__heart:hover .hover-icon{
+	opacity: 1;
+}
+.cart__button{
+	flex: 0 1 100%;
+	
+	
+}
+
+.cart__button span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+.cart__button span svg{
+	font-size: 24px;
+	
+}
+.cart__sale{
+	position: absolute;
+	width: 90px;
+	height: 35px;
+	background-color: #E8AA31;
+	color: #FEFEFE;
+	font-weight: 600;
+	line-height: 22px;
+	text-align: center;
+	top: 20px;
+	left: 0;
+	padding: 5px 0;
+}

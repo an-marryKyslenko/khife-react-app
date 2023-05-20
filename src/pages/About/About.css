@@ -1,0 +1,15 @@
+.about{
+	margin: 100px 0
+}
+.about__title{
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.about__text{
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.about__img{
+	text-align: center;
+}
