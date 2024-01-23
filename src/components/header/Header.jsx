@@ -17,11 +17,11 @@ import { useGlobalContaxt } from '../../context'
 import Catalor from '../catalog/Catalor';
 
 const Header = () => {
-  const {openCatalog,setOpenCatalog,setSideMenu} = useGlobalContaxt()
+  const {openCatalog,setOpenCatalogue,setSideMenu} = useGlobalContaxt()
   const [catalogId,setCatalogId]=useState(0)
   const [visiblePhone,setVisiblePhone]=useState(false)
   const handleCatalog=(index)=>{
-    setOpenCatalog(true)
+    setOpenCatalogue(true)
     setCatalogId(index)
     
   }
@@ -30,7 +30,7 @@ const Header = () => {
   },[])
   
   const closeCatalog=()=>{
-    setOpenCatalog(false)
+    setOpenCatalogue(false)
   }
   return (
 	 <header className='header' >
@@ -94,12 +94,12 @@ const Header = () => {
         <div className="header__container container">
           <div className='header__catalog'>
             {menuCatalog.map((item,index)=>{
-              const {mainTitle,path}=item
+              const {mainTitle,id}=item
               return <button
                   id={index}
                   onClick={()=>handleCatalog(index)}
                   key={index} 
-                  to={`/catalog/${path}`}
+                  to={`/catalogue/${id}`}
                   className={`header__catalog-btn hover-link ${index===catalogId && openCatalog ? 'active': ''}`}
                 >{mainTitle}</button>
             })}

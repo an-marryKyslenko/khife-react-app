@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import {IoIosArrowForward,IoIosArrowBack} from 'react-icons/io'
+
 import './Pagination.css'
 
 const Pagination = ({data, handleSlide,slide,showNumber,details}) => {
@@ -11,7 +13,7 @@ const Pagination = ({data, handleSlide,slide,showNumber,details}) => {
 				<button 
 					key={index}
 					data-slide={item.id} 
-					className={`pagination__bullet ${item.id === slide && '_active'}`}
+					className={`pagination__bullet ${item.id === slide ? '_active' : ''}`}
 					onClick={handleSlide}
 				></button>)
 			})}
@@ -32,11 +34,26 @@ const PaginationCenter = ({handleSlide,page,data}) => {
 				data-slide={index}
 				className={`pagination__bullet pagination-center__bullet ${index==page && '_active' }`}
 				onClick={handleSlide}
-			></button>)
+			>
+				<span></span>
+			</button>)
 			)}
 		</div>
 	</div>
   )
 }
+const PaginationBullets = ({handleSlide,page,data,handlePage}) => {
+	
+  return (
+			<div className="catalogue__pagination bullets">
+					<button className={`bullets__prev`} onClick={()=>handlePage('dcr')}><IoIosArrowBack/></button>
+					{data.map((item,index)=>(
+						<button key={index} data-slide={index} onClick={handleSlide} className={`bullets__bullet ${index===page && '_active'}`}>{index+1}</button>
+					))}
+					<button className={`bullets__next _active`}  onClick={()=>handlePage('inc')}><IoIosArrowForward/></button>
+			</div>
+  )
+}
 
-export { Pagination,PaginationCenter}
+
+export { Pagination,PaginationCenter,PaginationBullets}

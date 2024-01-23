@@ -1,5 +1,4 @@
 export function splitParts(arr,lengthPart) { 
-	if(arr.length > lengthPart) {
 		let chunks = [], 
 			parts = Math.floor(arr.length / lengthPart); 
 			
@@ -7,5 +6,4 @@ export function splitParts(arr,lengthPart) {
 			chunks.push(arr.slice(i, i+lengthPart)); 
 		
 		return chunks;
-	} else return arr; 
 	}

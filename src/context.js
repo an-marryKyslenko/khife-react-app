@@ -3,16 +3,15 @@ import { menuCatalog } from './data/catalogMenu';
 const MyContaxt = createContext()
 
 const ProviderContaxt = ({children})=>{
-	// const [screenSize,setScreenSize] = useState(undefined)
-	const [openCatalog,setOpenCatalog] = useState(false)
-	const [catalog,setCatalor]= useState(menuCatalog)
+	const [openCatalogue,setOpenCatalogue] = useState(false)
+	const [category,setCategory]= useState(menuCatalog)
 	const [sideMenu,setSideMenu] = useState(false)
 	return (
 		<MyContaxt.Provider
 			value={{
-				openCatalog,
-				setOpenCatalog,
-				catalog,
+				openCatalogue,
+				setOpenCatalogue,
+				category,
 				sideMenu,
 				setSideMenu,
 			}}

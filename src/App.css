@@ -69,6 +69,11 @@ body{
   display: flex;
   flex-direction: column;
 
+  overflow: hidden;
+}
+.wrapper._lock{
+	position: fixed;
+	width: 100%;
 }
 .container{
 	margin: 0 auto;

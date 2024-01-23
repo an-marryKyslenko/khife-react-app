@@ -4,10 +4,11 @@ import FrontSection from '../../components/home/FrontSection'
 import TypeCategory from '../../components/TypeCategory'
 
 import {typeFlashlights, typeWeapons} from '../../data/data'
-import {prodactsFavorite,fleshlightsProdact} from '../../data/dataProdact'
+import {productsFavorite,fleshlightsProdact} from '../../data/dataProdact'
 import { blogData } from '../../data/blogData'
 
 import './Home.css'
+import BlogSection from '../../components/BlogSection/BlogSection'
 
 const Home = () => {
  
@@ -21,10 +22,10 @@ const Home = () => {
         ))}
       </div>
     </div>
-    <ProductsSection lengthPart={4} title='Хіт продажу' link='#' textLink="Перейти в каталог" data={prodactsFavorite}/>
-    <ProductsSection isNews={true} lengthPart={3} title='Новинки' link='#' textLink="Більше новинок" data={prodactsFavorite}/>
-    <ProductsSection isNews={false} lengthPart={4} title='Акції' link='#' textLink="Всі акції" data={prodactsFavorite}/>
-    <ProductsSection isNews={false} isBlog={true} lengthPart={4} title='Наші статті' textLink="Всі акції" data={blogData}/>
+    <ProductsSection lengthPart={4} title='Хіт продажу' link='#' textLink="Перейти в каталог" data={productsFavorite}/>
+    <ProductsSection isNews={true} lengthPart={3} title='Новинки' link='#' textLink="Більше новинок" data={productsFavorite}/>
+    <ProductsSection isNews={false} lengthPart={4} title='Акції' link='#' textLink="Всі акції" data={productsFavorite}/>
+    <BlogSection title='Наші статті' textLink="Всі акції" data={blogData} lengthPart={4} link="#"/>
     <section className="flashlights-section">
       <div className="container flashlights-section__container">
         {typeFlashlights.map((item,index)=>(

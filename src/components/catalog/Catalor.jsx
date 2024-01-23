@@ -4,11 +4,11 @@ import { useGlobalContaxt } from '../../context'
 import './Catalog.css'
 
 const Catalor = ({index}) => {
-	const {catalog,openCatalog,setOpenCatalog}= useGlobalContaxt()
-	const catalogSection = catalog[index]
-	const {titles,id} = catalogSection
+	const {category,openCatalogue,setOpenCatalogue}= useGlobalContaxt()
+	const categorySection = category[index]
+	const {titles,mainCategory} = categorySection
   return (
-	 <section className={`catalog ${openCatalog ? 'open-menu':'close-menu'}`}>
+	 <section className={`catalog ${openCatalogue ? 'open-menu':'close-menu'}`}>
 		<div className="container">
 			<ul className='catalog__section'>
 				{titles.map((item,index)=>(
@@ -23,7 +23,7 @@ const Catalor = ({index}) => {
 						<ul className='catalog__subtitles'>
 							{types.subtitle.map((item,i)=>(
 								<li className='catalog__subtitle hover-link' key={i}>
-									<Link to={`${id}?types=${types.id}&type=${item.id}`}>{item.name}</Link>
+									<Link to={`catalogue/${mainCategory}?types=${types.id}&type=${item.id}`}>{item.name}</Link>
 								</li>
 							))}
 						</ul>
@@ -33,7 +33,7 @@ const Catalor = ({index}) => {
 			<ul className='catalog__section subsection'>
 				{titles.map((item,index)=>(
 					<li key={index} className='catalog__item'>
-						<Link className='catalog__btn hover-link' to={`${id}?types=${item.id}`}>Дивитись все</Link>
+						<Link className='catalog__btn hover-link' to={`catalogue/${mainCategory}?types=${item.id}`}>Дивитись все</Link>
 					</li>
 				))}
 			</ul>

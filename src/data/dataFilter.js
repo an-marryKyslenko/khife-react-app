@@ -1,5 +1,5 @@
 import { menuCatalog } from "./catalogMenu"
-import {prodactsFavorite} from './dataProdact'
+import {productsFavorite} from './dataProdact'
 
 function getMinMax (arr,type){
 	const newArr=[...arr.map(i=>i[type])]
@@ -23,34 +23,34 @@ function getArray(arr,type){
 export const dataFilter = [
 	{
 		title: 'Ціна',
-		data : getMinMax(prodactsFavorite,'price')
+		data : getMinMax(productsFavorite,'price')
 	},
 	{
 		title:'Виробництво',
-		data: getArray(prodactsFavorite, 'manufacturer')
+		data: getArray(productsFavorite, 'manufacturer')
 	},
 	{
 		title:'Сталь',
-		data: getArray(prodactsFavorite, 'stile')
+		data: getArray(productsFavorite, 'stile')
 	},
 	{
 		title:'Ручка',
-		data: getArray(prodactsFavorite, 'handle')
+		data: getArray(productsFavorite, 'handle')
 	},
 	{
 		title:'Гарда і тильник',
-		data: getArray(prodactsFavorite, 'garda')
+		data: getArray(productsFavorite, 'garda')
 	},
 	{
 		title:'Загальна довжина',
-		data: getMinMax(prodactsFavorite,'lengthTotal')
+		data: getMinMax(productsFavorite,'lengthTotal')
 	},
 	{
 		title:'Ширина леза',
-		data: getMinMax(prodactsFavorite,'width')
+		data: getMinMax(productsFavorite,'width')
 	},
 	{
 		title:'Рейтинг',
-		data: getMinMax(prodactsFavorite,'stars')
+		data: getMinMax(productsFavorite,'stars')
 	},
 ]

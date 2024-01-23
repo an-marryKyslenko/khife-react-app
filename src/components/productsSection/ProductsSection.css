@@ -25,19 +25,7 @@
 	opacity: 1;
 	
 }
-.prodacts__title{
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 46px;
-	letter-spacing: 0.05em;
-	color: #141414;
-	margin-bottom: 60px;
-}
-.prodacts__title.news-section{
-	margin: 30px 0;
-	color: #fff;
-	z-index: 10;
-}
+
 .prodacts__link{
 	text-align: right;
 	padding-right: 20px;

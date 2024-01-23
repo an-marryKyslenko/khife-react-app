@@ -1,0 +1,14 @@
+.blog{
+	margin-bottom: 60px;
+}
+.blog__container{
+
+}
+.blog__title{
+
+}
+.blog__list{
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}

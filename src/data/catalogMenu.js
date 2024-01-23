@@ -1,7 +1,7 @@
 export const menuCatalog = [
 	{
 		mainTitle: 'Каталог ножів',
-		id: 'category-1',
+		mainCategory: 'category-1',
 		titles: [ 
 			{
 			title: 'Каталог ножів',
@@ -62,7 +62,7 @@ export const menuCatalog = [
 	},
 	{
 		mainTitle: 'Клинкова зброя',
-		id: 'category-2',
+		mainCategory: 'category-2',
 		titles:[
 			{
 			title: 'Каталог ножей',
@@ -87,7 +87,7 @@ export const menuCatalog = [
 	},
 	{
 		mainTitle: 'Сувенірні вироби',
-		id: 'catego3ry-',
+		mainCategory: 'catego3ry-',
 		titles:[
 			{
 				title: 'Каталог ножей',
@@ -104,7 +104,7 @@ export const menuCatalog = [
 	},
 	{
 		mainTitle: 'Фонарi ARMYTEK',
-		id: 'category-4',
+		mainCategory: 'category-4',
 		titles:[
 			{
 				title: 'Фонарi ARMYTEK',
@@ -120,7 +120,7 @@ export const menuCatalog = [
 	},
 	{
 		mainTitle: 'Супутні товари',
-		id: 'category-5',
+		mainCategory: 'category-5',
 		titles:[
 				{
 					title: 'Заточування та полірування ножів',
