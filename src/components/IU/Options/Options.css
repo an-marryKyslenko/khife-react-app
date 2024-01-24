@@ -1,0 +1,78 @@
+.options {
+	width: 300px;
+	position: relative;
+
+}
+.options__title{
+	display: flex;
+	justify-content: space-between;
+	border-radius: 3px;
+	border: 1px solid rgba(4, 4, 4, 0.15);
+	margin-bottom: 20px;
+	padding: 10px 0 10px 20px;
+	position: relative;
+	text-align: center;
+	background-color: #fff;
+	z-index: 5;
+}
+
+.options__title .arrow-icon{
+	right: 0;
+	top: 0;
+	color: #E8AA31;
+	position: absolute;
+	background-color: #141414;
+	width: 40px;
+	height: 100%;
+	transition: all 0.4s ease 0s;
+}
+.options._active .arrow-icon svg{
+	transform: rotate(180deg) translateY(50%);
+}
+.options__title .arrow-icon svg{
+	transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+}
+.options__list{
+	position: absolute;
+	width: 100%;
+	max-height: 100%;
+	top: 0;
+	background-color: #fff;
+}
+.options._active .options__list{
+	top: 100%;
+	left: 0;
+	display: block;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+	z-index: 6;
+	max-height: max-content;
+
+}
+.options__item {
+	padding: 10px 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.options__item:hover{
+	background-color: #141414;
+	color: #fff;
+}
+.options._active .options__item{
+	position: static;
+}
+.options__input {
+	opacity: 0;
+}
+.options__label {
+}
+.options__text {
+}
+
+@media (max-width: 400px){
+	.options{
+		width: 220px;
+	}
+}

@@ -22,10 +22,10 @@ const Home = () => {
         ))}
       </div>
     </div>
-    <ProductsSection lengthPart={4} title='Хіт продажу' link='#' textLink="Перейти в каталог" data={productsFavorite}/>
-    <ProductsSection isNews={true} lengthPart={3} title='Новинки' link='#' textLink="Більше новинок" data={productsFavorite}/>
-    <ProductsSection isNews={false} lengthPart={4} title='Акції' link='#' textLink="Всі акції" data={productsFavorite}/>
-    <BlogSection title='Наші статті' textLink="Всі акції" data={blogData} lengthPart={4} link="#"/>
+    <ProductsSection lengthPart={4} title='Хіт продажу' link='catalogue/category-1' textLink="Перейти в каталог" data={productsFavorite}/>
+    <ProductsSection isNews={true} lengthPart={3} title='Новинки' link='catalogue/category-1' textLink="Більше новинок" data={productsFavorite}/>
+    <ProductsSection isNews={false} lengthPart={4} title='Акції' link='catalogue/category-1' textLink="Всі акції" data={productsFavorite}/>
+    <BlogSection title='Наші статті' textLink="Всі акції" data={blogData} lengthPart={4} link="catalogue/category-1"/>
     <section className="flashlights-section">
       <div className="container flashlights-section__container">
         {typeFlashlights.map((item,index)=>(
@@ -33,7 +33,7 @@ const Home = () => {
         ))}
       </div>
     </section>
-    <ProductsSection lengthPart={4} title='Ліхтарі' link='#' textLink="Перейти в каталог" data={fleshlightsProdact}/>
+    <ProductsSection lengthPart={4} title='Ліхтарі' link='catalogue/category-4' textLink="Перейти в каталог" data={fleshlightsProdact}/>
    </main>
 	 
   )

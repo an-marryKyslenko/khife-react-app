@@ -9,6 +9,7 @@
 	transition: 0.2s 0.1s;
 	position: relative;
 	background-color: #fff;
+	white-space: nowrap;
 }
 .button > span{
 	color: #fff;
@@ -18,7 +19,7 @@
 	width: 100%;
 	height: 100%;
 }
-.button .icon svg{
+.button .icon{
 	font-size: 30px;
 	position: relative;
 	left: 5px;
