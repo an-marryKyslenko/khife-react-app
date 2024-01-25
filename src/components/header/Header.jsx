@@ -55,9 +55,9 @@ const Header = () => {
           className='smoll-screen'
           href={`tel:${headerMenu.telephones[0]}`}
           ><SlPhone/></a>
-          <Link to='/' className='menu-link hover-link personal'><BsPerson className='personal-icon'/> <span>Особистий кабінет</span> </Link>
+          <Link to='cabinet' className='menu-link hover-link personal'><BsPerson className='personal-icon'/> <span>Особистий кабінет</span> </Link>
           <button type='button' className="smoll-screen"><AiOutlineHeart/></button>
-          <Link to='/' className='smoll-screen cart_link'>
+          <Link to='cabinet/favorite' className='smoll-screen cart_link'>
               <span className="cart__icon"><GiShoppingCart/> <span>0</span></span>
           </Link>
           <button className="menu-burger" onClick={()=>setSideMenu(true)}></button>

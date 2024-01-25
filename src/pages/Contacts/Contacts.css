@@ -1,0 +1,33 @@
+.contacts{
+
+}
+.contacts__container{
+}
+.contacts__title{
+	text-align: center;
+	padding: 30px 0;
+	margin-bottom: 0;
+}
+.contacts__subtitle{
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.contacts__social-media{
+	margin-bottom: 60px;
+}
+.contacts-menu{
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+	text-align-last: left;
+	margin-bottom: 30px;
+}
+.contacts-menu__item{
+	position: relative;
+	padding-left: 30px;
+}
+.contacts-menu__item span{
+position: absolute;
+inset:0;
+}

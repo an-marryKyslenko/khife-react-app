@@ -65,14 +65,7 @@ color: #fff;
 	gap:20px;
 	
 }
-.item-contact{
-	position: relative;
-	padding-left: 30px;
-}
-.item-contact span{
-position: absolute;
-inset:0;
-}
+
 .footer__form {
 	display: flex;
 	flex-wrap: wrap;
@@ -130,18 +123,7 @@ inset:0;
 	display: flex;
 	gap: 20px;
 }
-.footer__social-link {
-	font-size: 20px;
-	height: 38px;
-	width: 38px;
-	position: relative;
-	z-index: 2;
-	height: 38px;
-	width: 38px;
-	text-align: center;
-	padding: 10px 0;
-	border-radius: 50%;
-}
+
 .footer__privat {
 	display: flex;
 	justify-content: space-between;

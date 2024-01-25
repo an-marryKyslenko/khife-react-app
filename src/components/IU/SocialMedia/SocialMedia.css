@@ -1,0 +1,16 @@
+.social-media{
+	display: flex;
+	gap: 20px;
+}
+.social-media__link {
+	font-size: 20px;
+	height: 38px;
+	width: 38px;
+	position: relative;
+	z-index: 2;
+	height: 38px;
+	width: 38px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 50%;
+}

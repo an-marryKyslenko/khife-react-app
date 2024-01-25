@@ -14,7 +14,7 @@ const Cart = ({ id, title,
   lengthTotal, width }) => {
 
   return (
-    <Link to={`${id}`} className={`${details} card`}>
+    <Link to={`../../product/${id}`} className={`${details} card`}>
       <div className="card__contant">
         <img className='card__img' src={img} alt="" />
         <h6 className="card__title">{title}</h6>

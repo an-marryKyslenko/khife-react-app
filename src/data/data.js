@@ -38,8 +38,7 @@ const headerMenu = {
 	menu: [
 		{name:'Kaталог', path: "catalogue/category-1"},
 		{name:'Про нас', path: "about"},
-		{name:'Оплата і доставка', path: "paining"},
-		{name:'Новини', path: "news"},
+		{name:'Оплата і доставка', path: "pay_delivery"},
 		{name:'Контакти', path: "contakts"},
 	],
 	logo: logo,

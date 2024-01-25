@@ -1,0 +1,208 @@
+.cabinet {
+}
+.cabinet__container {
+}
+.container {
+}
+.cabinet__title {
+	margin: 20px 0 0 0;
+}
+
+.cabinet__contant {
+	display: flex;
+	margin: 40px 0;
+	gap: 30px;
+}
+.cabinet__menu {
+	flex: 0 1 30%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.cabinet__link{
+	background-color: #E8AA31;
+	color: #fff;
+	height: 80px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+.cabinet__link span{
+	display: inline-block;
+	z-index: 3;
+}
+.cabinet__link .icon{
+	font-size: 26px;
+	padding-right: 10px;
+}
+.cabinet__link::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #141414;
+	transition: width 0.4s ease-out 0.2s;
+}
+.cabinet__link._active::after{
+	width: 0;
+}
+.cabinet__link._active{
+	color: #141414;
+	font-weight: 700;
+}
+.cabinet__output {
+	flex: 1 1 auto;
+}
+
+
+.cabinet__section {
+	height: 100%;
+	padding: 15px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 12px #1414142c;
+}
+.cabinet__container {
+}
+.cabinet__subtitle {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.cabinet__content {
+}
+
+
+/* ----------------------------------------------------------------------------- */
+.personal-info {
+	
+}
+.personal-info__form {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.personal-info__field{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 15px;
+
+}
+.personal-info__label {
+	flex: 0 1 25%;
+	white-space: nowrap;
+	font-weight: 500;
+
+}
+.personal-info__input {
+	border: 1px solid hsla(0, 0%, 8%, 0.3);
+	border-radius: 3px;
+	background-color: hsla(0, 0%, 8%, 0.1);
+	padding: 8px 15px;
+}
+.personal-info__buttons{
+	display: flex;
+	gap: 20px
+}
+.personal-info__button{
+	flex: 0 1 calc(50% - 20px);
+}
+
+/* -------------------------------------------------------------------- */
+.favorite {
+}
+.favorite__item {
+	
+}
+
+/* ------------------------------------------------ */
+
+.history{
+
+}
+.history__item{
+	padding: 20px;
+background-color: rgb(237, 235, 235);
+margin-bottom: 20px;
+border-radius: 6px;
+}
+.history__item:last-child{
+	margin-bottom: 0;
+}
+.history__total-price{
+	font-size: 20px;
+	font-weight: 700;
+	margin: 20px 0;
+	text-align: right;
+}
+
+/* ---------------------------------------------- */
+.delete-account{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+}
+
+.delete-accout__input {
+	border: 1px solid hsla(0, 0%, 8%, 0.3);
+	border-radius: 3px;
+	background-color: hsla(0, 0%, 8%, 0.1);
+	padding: 8px 15px;
+}
+.delete-account__button.button{
+	background-color: rgb(197, 2, 2);
+}
+
+
+/* --------------------------------------------- */
+
+@media (max-width: 767px){
+	.cabinet__contant{
+		flex-direction: column;
+	}
+	.cabinet__link{
+		height: 50px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 500px){
+	.personal-info__field{
+		flex-direction: column;
+		gap: 5px;
+		align-items: start;
+	}
+	.personal-info__input{
+		width: 100%;
+	}
+	.personal-info__buttons{
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 400px){
+	.favorite__item{
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.favorite__img{
+		flex: 1 1 100%;
+	}
+	.favorite__img img{
+		width: 80px;
+	}
+	.favorite__delete{
+		position: absolute;
+		right: 0px;
+		top: 10px;
+	}
+}
